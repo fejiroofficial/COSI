@@ -1,0 +1,30 @@
+.ConfirmationHeader {
+  font-size: 35px;
+  font-family: palanquin;
+}
+
+.ConfirmationCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 802px !important;
+  height: 402px !important;
+  box-shadow: 2px 2px 31px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+.ConfirmationCardBody {
+  display: contents;
+}
+
+@media (max-width: 499px) {
+  .ConfirmationHeader {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 425px) {
+  .ConfirmationHeader {
+    padding-left: 27px;
+  }
+}

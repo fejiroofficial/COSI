@@ -1,0 +1,37 @@
+.WelcomeHeader {
+  font-size: 22px;
+  font-family: "Palanquin";
+}
+
+.CustomFormControl {
+  width: 449px !important;
+  height: 83px !important;
+  font-size: 24px !important;
+  border-radius: 8px !important;
+}
+
+.CustomButton {
+  width: 449px;
+  height: 83px;
+  border-radius: 8px !important;
+  background-color: #9909b7 !important;
+  border-color: #9909b7 !important;
+  font-size: 24px !important;
+}
+
+@media (max-width: 919px) {
+  .CustomButton, .CustomFormControl {
+    font-size: 18px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .CustomFormControl {
+    width: 100% !important;
+  }
+  label,
+  .CustomButton {
+    font-size: 18px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,96 @@
+.InformationForm {
+  width: 950px;
+}
+
+.Error {
+  color: red;
+}
+
+.ErrorNote {
+  display: none;
+}
+
+span {
+  font-size: 12px;
+}
+
+.form-check-label {
+  margin: 5px 17px;
+  margin-bottom: 0;
+  font-size: 18px;
+  width: fit-content;
+}
+
+label {
+  font-size: 24px;
+}
+
+.InfoHeader {
+  font-size: 35px;
+  margin-bottom: 17px;
+  font-family: "Palanquin";
+}
+
+.CustomFormControlSec {
+  height: 83px !important;
+  font-size: 24px !important;
+  border-radius: 8px !important;
+}
+
+.form-check-input {
+  height: 29px;
+  width: 29px;
+}
+
+.form-check {
+  height: 50px;
+}
+
+@media (min-width: 1020px) {
+  .CustomFormControlSec {
+    width: 449px !important;
+  }
+  .CustomFormControlLong {
+    width: 100% !important;
+  }
+  .InformationFullName {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 1020px) {
+  .InformationForm {
+    display: grid;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 919px) {
+  .CustomFormControlSec {
+    font-size: 18px !important;
+  }
+  label {
+    font-size: 18px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .InformationForm {
+    width: 100%;
+  }
+  .InfoHeader {
+    font-size: 26px;
+  }
+  .CustomFormControlSec {
+    height: 83px !important;
+    font-size: 18px !important;
+    border-radius: 8px !important;
+  }
+  label,
+  .CustomButton {
+    font-size: 18px;
+    width: 100%;
+  }
+}

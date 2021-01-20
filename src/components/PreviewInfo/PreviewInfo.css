@@ -1,0 +1,72 @@
+.PreviewHeader {
+  font-size: 35px;
+  margin-bottom: 38px;
+  font-family: "Palanquin";
+}
+
+.CardHeader {
+  font-size: 27px;
+}
+
+.CardFooterHold {
+  height: 83px;
+  background-color: #9909b7 !important;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.InfoItem {
+  font-size: 24px;
+  color: #858585;
+  margin-bottom: 31px;
+}
+
+.InfoItem .col {
+  overflow: auto !important;
+}
+
+.CustomButtonOutline {
+  color: #9928b7 !important;
+  border-color: #9928b7 !important;
+}
+
+.CustomButtonOutline:hover {
+  color: #fff !important;
+  background-color: #9928b7 !important;
+}
+
+.PreviewCard {
+  min-height: 500px !important;
+}
+
+@media (max-width: 499px) {
+  .PreviewHeader {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 919px) {
+  .PreviewCard,
+  .InfoItem,
+  .CardHeader,
+  .CardFooterHold {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 425px) {
+  .PreviewCard,
+  .InfoItem,
+  .CardHeader,
+  .CustomButtonOutline {
+    font-size: 14px !important;
+  }
+}
+
+@media (min-width: 920px) {
+  .PreviewCard {
+    width: 821px !important;
+    min-height: 500px !important;
+  }
+}
