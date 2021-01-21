@@ -1,11 +1,9 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import { render, fireEvent, getByDisplayValue, getByLabelText } from '@testing-library/react';
+import { render, fireEvent } from '@testing-library/react';
 import InformationForm from './InformationForm';
 import store from '../../redux/store'
-// import * as apiServiceMock from '../../api';
 
-// jest.mock('../../api')
 
 test('submit button should be disabled when a basic field is empty', () => {
   const { getByPlaceholderText, getByText } = render(
