@@ -85,7 +85,6 @@ const InformationForm: React.FC<InformationFormProps> = ({ addFormData, showPrev
 
     // reset compulsory fields
     setRequiredFields([])
-
     const compulsoryFields = validateFields()
     if (compulsoryFields && compulsoryFields.length) {
       setRequiredFields(compulsoryFields)

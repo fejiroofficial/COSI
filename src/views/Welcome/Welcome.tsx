@@ -3,9 +3,7 @@ import WelcomeForm from '../../components/WelcomeForm';
 import './Welcome.css';
 import illustration from '../../assets/images/gaussianBlur.svg';
 
-type WelcomeProps = {
-
-};
+type WelcomeProps = {};
 
 const Welcome: React.FC<WelcomeProps> = () => {
   return (

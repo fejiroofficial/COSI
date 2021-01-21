@@ -24,4 +24,5 @@ const BasicInfo: React.FC<BasicInfoProps> = ({ showPreview }) => {
 const mapStateToProps = (state: any) => ({
   showPreview: state.information.showPreview
 })
+
 export default connect(mapStateToProps, null)(BasicInfo);

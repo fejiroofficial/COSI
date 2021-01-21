@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
+import axios from 'axios';
 import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
 import Spinner from 'react-bootstrap/Spinner';
 import './WelcomeForm.css';
-import { checkin } from '../../api';
 
 type WelcomeFormProps = {};
 
@@ -20,8 +20,11 @@ const WelcomeForm: React.FC<WelcomeFormProps> = () => {
     }
     try {
       setLoading(true)
-      const data = await checkin(payload)
-      if (data && Object.keys(data).length) {
+      const { data, status } = await axios.post('https://app.fakejson.com/q', {
+        token: "ELOeXImnDCgAec0Bx3GUqw",
+        data: payload
+      })
+      if (status === 200) {
         localStorage.setItem('currentUser', data.lastName)
         history.push('/basic-form')
       }
