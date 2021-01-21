@@ -21,7 +21,7 @@ export default class Confirmation extends React.Component<Props, State> {
 
   render() {
     return (
-      <div style={{ height: '80%' }} className='d-flex justify-content-center align-items-center'>
+      <div className='CardHolder d-flex justify-content-center align-items-center'>
         <Card className='ConfirmationCard'>
           <Card.Body className='ConfirmationCardBody'>
             <div className="ConfirmationHeader">Your check-in is confirmed</div>
