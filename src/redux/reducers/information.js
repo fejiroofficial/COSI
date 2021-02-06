@@ -15,6 +15,7 @@ export default function information(state = initialState, action) {
       }
     case TOGGLE_PREVIEW:
       return {
+        ...state,
         showPreview: action.previewToogle,
       }
     default:
